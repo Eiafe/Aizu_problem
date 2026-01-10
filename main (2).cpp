@@ -1,15 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-   int t;
-   cin>>t;
-   int sum=0;
-   while(t>0){
-       int last=t%10;
-       sum+=last;
-      t/=10; 
-       
-   }
-   cout<<sum<<endl;
-   
+    int a;
+    cin>>a;
+   int cnt=0;
+    for(int i=2;i<a;i++){
+        if(a%i==0){
+            cnt++;
+        }
+    }
+    if(cnt==0){
+        cout<<"prime";
+    
+    }
+    else{
+        cout<<"composite"<<endl;
+    }
+    
+    
 }
